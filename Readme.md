@@ -4,7 +4,6 @@
 ## Create Database:
 ```
 create database store;
-// Tabels
 create table countries (
     code int  primary key ,
     name varchar(20) unique,
