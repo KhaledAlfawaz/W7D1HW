@@ -4,14 +4,15 @@
 ## Create Database:
 ```
 create database store;
+```
+## Create Tables:
+```
 create table countries (
     code int  primary key ,
     name varchar(20) unique,
     continent_name varchar(20) not NULL
 );
-```
-## Create Tables:
-```
+
 create table users (
     id int primary key ,
     full_name varchar(20),
