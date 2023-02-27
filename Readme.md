@@ -2,11 +2,11 @@
 ![digram](./Digram.png)
 
 ## Create Database:
-```
+```SQL
 create database store;
 ```
 ## Create Tables:
-```
+```SQL
 create table countries (
     code int  primary key ,
     name varchar(20) unique,
@@ -49,7 +49,7 @@ create table order_products(
 );
 ```
 ### DML insert:
-```
+```SQL
 insert  into countries values ('1' , 'Saudi Arabia' , 'Asia');
 insert  into users values ('1' , 'Khaled alfawaz' , 'Khaled@gmail.com' , 'm' , '16/8/1999' , '2023-2-27' , '1');
 insert  into orders values ('1' , '1' , 'start' , '2023-2-27');
@@ -58,12 +58,12 @@ insert  into order_products values ('1' , '1' , '3');
 ```
 
 ### DML update:
-```
+```SQL
 update countries set name='Kuwait' where code = '1';
 ```
 
 ### DML delete:
-```
+```SQL
 SET FOREIGN_KEY_CHECKS=0;
 delete from products where id = '1';
 SET FOREIGN_KEY_CHECKS=1;
